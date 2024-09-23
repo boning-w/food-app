@@ -14,7 +14,7 @@ export default function CarouselPromo({
 }: {
   slides: TypePromo[];
 }) {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
+  const [emblaRef] = useEmblaCarousel(
     {
       breakpoints: { "(max-width: 639px)": { dragFree: true } },
       align: "start",

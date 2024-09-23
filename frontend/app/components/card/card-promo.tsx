@@ -12,11 +12,9 @@ export type TypePromo = {
   redeemLink: string;
 };
 
-function CardPromoDecorator(props: any) {
+function CardPromoDecorator({ children }: { children: React.ReactNode }) {
   return (
-    <div className={"w-60 h-[440px] lg:w-72 lg:h-[480px]"}>
-      {props.children}
-    </div>
+    <div className={"w-60 h-[440px] lg:w-72 lg:h-[480px]"}>{children}</div>
   );
 }
 
@@ -74,7 +72,7 @@ export function CardPromoNo() {
             No promos right now 🤔
           </p>
           <p className="font-n2r text-black text-xs text-center">
-            Tips: Check back during your chosen restaurant's opening hours
+            Tips: Check back during your chosen restaurant&apos;s opening hours
             <span className="not-italic"> 😋</span>
           </p>
         </CardHeader>
@@ -86,7 +84,10 @@ export function CardPromoNo() {
 export function CardPromoLogin() {
   return (
     <CardPromoDecorator>
-      <Card shadow="sm" className="w-full h-full bg-[#f9f6f5] flex-col items-center justify-center bg-cover bg-no-repeat bg-center bg-[url('/images/PROMO_LOGIN.png')]">
+      <Card
+        shadow="sm"
+        className="w-full h-full bg-[#f9f6f5] flex-col items-center justify-center bg-cover bg-no-repeat bg-center bg-[url('/images/PROMO_LOGIN.png')]"
+      >
         <CardHeader className="font-n2c text-3xl text-white tracking-wider uppercase flex-col gap-3">
           <p>Sign in to see</p>
           <p>Extra rewards,</p>

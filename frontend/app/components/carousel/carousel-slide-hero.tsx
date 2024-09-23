@@ -1,4 +1,4 @@
-import Image, { getImageProps } from "next/image";
+import { getImageProps } from "next/image";
 import ButtonMedium from "../button/button-medium";
 import Link from "next/link";
 
@@ -36,6 +36,7 @@ export default function CarouselSlideHero({ slide }: { slide: TypeSlideHero }) {
         <source media="(min-width: 640px)" srcSet={imgSrcDesktop} />
         <source media="(max-width: 639px)" srcSet={imgSrcMobile} />
         <img
+          alt=""
           {...rest}
           className="w-full h-full brightness-75 object-cover object-[0_12%] sm:object-[0_0]"
         />

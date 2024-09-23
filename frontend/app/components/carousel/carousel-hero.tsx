@@ -17,10 +17,8 @@ export default function CarouselHero({ slides }: { slides: TypeSlideHero[] }) {
     }),
   ]);
 
-  const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
-    emblaApi,
-    () => {}
-  );
+  const { selectedIndex, scrollSnaps, onDotButtonClick } =
+    useDotButton(emblaApi);
 
   return (
     <div className="embla w-full relative">

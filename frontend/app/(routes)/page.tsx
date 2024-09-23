@@ -14,7 +14,7 @@ export default async function Page() {
         <CarouselHero slides={FAKE_SLIDES_HERO} />
       </section>
       <section className="flex justify-center my-6">
-        <div className="max-w-screen-lg w-full px-6 flex flex-col gap-6">  
+        <div className="max-w-screen-lg w-full px-6 flex flex-col gap-6">
           <div className="flex flex-col items-center gap-2 md:flex-row md:justify-between">
             <H2>Promos & Rewards</H2>
             <Link
