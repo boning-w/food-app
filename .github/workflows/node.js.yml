@@ -4,6 +4,7 @@
 name: Food App Frontend CI
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "auth" ]
   pull_request:
