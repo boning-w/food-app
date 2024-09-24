@@ -5,9 +5,9 @@ name: Food App Frontend CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "auth" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "auth" ]
 
 jobs:
   CI:
