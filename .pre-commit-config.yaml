@@ -1,7 +1,21 @@
 repos:
   - repo: local
     hooks:
-      - id: eslint
-        name: eslint
+      - id: lint
+        name: lint
         entry: bash -c "cd ./frontend && npm run lint"
-        language: node
+        language: system
+        pass_filenames: false
+        always_run: true
+      - id: test
+        name: test
+        entry: bash -c "cd ./frontend && npm run test run"
+        language: system
+        pass_filenames: false
+        always_run: true
+      - id: build
+        name: build
+        entry: bash -c "cd ./frontend && npm run build"
+        language: system
+        pass_filenames: false
+        always_run: true
