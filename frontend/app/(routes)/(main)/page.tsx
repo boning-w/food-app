@@ -1,9 +1,9 @@
 import CarouselHero from "@/app/components/carousel/carousel-hero";
 import { FAKE_SLIDES_HERO, FAKE_SLIDES_PROMO } from "@/app/data/data-fake";
-import H2 from "../components/heading/heading-2";
+import H2 from "../../components/heading/heading-2";
 import IconArrowRight from "@/public/icons/icon-arrow-right.svg";
-import CarouselPromo from "../components/carousel/carousel-promo";
-import { LINK_PROMOS_REWARDS } from "../lib/constants";
+import CarouselPromo from "../../components/carousel/carousel-promo";
+import { LINK_PROMOS_REWARDS } from "../../lib/constants";
 import { Link } from "@nextui-org/react";
 import NextLink from "next/link";
 
