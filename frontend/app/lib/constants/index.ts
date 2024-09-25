@@ -10,9 +10,8 @@ export const BACKEND_URL = "http://localhost:8080";
 
 /**
  * API endpoint for test purposes.
- * @type {string}
  */
-export const API_TEST_GET: string = "/apis/test";
+export const API_TEST_GET = "/api/test";
 
 // /**
 //  * API endpoint for user authentication signup.
@@ -54,6 +53,6 @@ export const LINK_KFC_APPLE_STORE = "";
 export const LINK_KFC_GOOGLE_PLAY_STORE = "";
 export const LINK_PRIVACY_POLICY = "/privacy-policy";
 export const LINK_TERMS_AND_CONDITIONS = "/terms-and-conditions";
-export const LINK_PROTECTED_DISCLOSURE = "/protected-disclosure"
+export const LINK_PROTECTED_DISCLOSURE = "/protected-disclosure";
 export const LINK_YUM = "/yum";
-export const LINK_SITE_MAP = "/sitemap"
+export const LINK_SITE_MAP = "/sitemap";

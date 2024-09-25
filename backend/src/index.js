@@ -21,6 +21,10 @@ app.get("/", (req, res) => {
     res.status(200).json({ message: "Hello world!"});
 })
 
+app.get("/api/test", (req, res) => {
+    res.send("Test");
+});
+
 app.listen(config.PORT, ()=> {
     logger.info(`Server running at ${config.PORT} port`);
 })
