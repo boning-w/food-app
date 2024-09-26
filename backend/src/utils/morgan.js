@@ -1,7 +1,7 @@
-const morgan = require("morgan");
-const config = require("../config/index");
-const logger = require("./logger");
+import morgan from "morgan";
+import { NODE_ENV } from "../configs/index";
+import { stream } from "./logger";
 
-module.exports = morgan(config.NODE_ENV === 'dev' ? 'tiny' : 'combined', {
-    stream: logger.stream,
+export default morgan(NODE_ENV === "dev" ? "tiny" : "combined", {
+  stream: stream,
 });

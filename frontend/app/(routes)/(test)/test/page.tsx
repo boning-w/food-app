@@ -1,5 +1,7 @@
 import apiTest from "@/app/apis/api-test";
 
+export const dynamic = "force-dynamic";
+
 /**
  * Page component that fetches data from an API using the apiTest function.
  * The fetched data is displayed in a paragraph element.
